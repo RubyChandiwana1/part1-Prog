@@ -14,8 +14,16 @@ public class Login {
 private final String firstName;
 private final String lastName;
 
+ private String registeredUsername;
+    private String registeredPassword;
+    private String registeredCell;
+
+ public Login(String firstName, String lastName) {
+        this.firstName = Objects.requireNonNull(firstName, "firstName");
+        this.lastName = Objects.requireNonNull(lastName, "lastName");
+    }
  
-    
+
 
 
     
