@@ -23,6 +23,12 @@ private final String lastName;
         this.lastName = Objects.requireNonNull(lastName, "lastName");
     }
  
+ public void setRegistrationDetails(String username, String password, String cellPhoneNumber) {
+        this.registeredUsername = username;
+        this.registeredPassword = password;
+        this.registeredCell = cellPhoneNumber;
+    }
+ 
 
 
 
