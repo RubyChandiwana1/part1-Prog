@@ -65,6 +65,15 @@ private final String lastName;
     public boolean loginUser(String username, String password) {
         return Objects.equals(registeredUsername, username) && Objects.equals(registeredPassword, password);
     }
+    
+    public String returnLoginStatus(boolean loginSuccessful) {
+        if (loginSuccessful) {
+            return "Welcome " + firstName + ", " + lastName + " it is great to see you again.";
+        }
+        return "Username or password incorrect, please try again.";
+    }
+
+    
         
 
 
