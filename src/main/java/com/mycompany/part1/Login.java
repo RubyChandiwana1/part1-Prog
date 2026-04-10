@@ -72,6 +72,15 @@ private final String lastName;
         }
         return "Username or password incorrect, please try again.";
     }
+    
+    public String returnUsernameCaptureMessage() {
+        return checkUserName()
+                ? "Username successfully captured."
+                : "Username is not correctly formatted; please ensure that your username contains an underscore and is no more than five characters in length.";
+    }
+
+    
+    
 
     
         
