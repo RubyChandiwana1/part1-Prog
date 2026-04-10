@@ -58,6 +58,15 @@ private final String lastName;
 
         return "The two above conditions have been met and the user has been registered successfully.";
     }
+        public boolean loginUser(String username, String password) {
+        return Objects.equals(registeredUsername, username) && Objects.equals(registeredPassword, password);
+    }
+        
+    public boolean loginUser(String username, String password) {
+        return Objects.equals(registeredUsername, username) && Objects.equals(registeredPassword, password);
+    }
+        
+
 
 
  
