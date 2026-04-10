@@ -11,5 +11,11 @@ public class Login {
     // https://quickblox.com/blog/beginner-guide-to-chat-app-architecture/
     private static final Pattern INTERNATIONAL_CELL_PATTERN = Pattern.compile("^\\+\\d{1,3}\\d{1,10}$");
     
+ private final String firstName;
+    private final String lastName;
+
+
+    
+
 
 
