@@ -40,6 +40,11 @@ private final String lastName;
         if (!PASSWORD_HAS_DIGIT.matcher(registeredPassword).find()) return false;
         return PASSWORD_HAS_SPECIAL.matcher(registeredPassword).find();
     }
+      public boolean checkCellPhoneNumber() {
+        if (registeredCell == null) return false;
+        return INTERNATIONAL_CELL_PATTERN.matcher(registeredCell).matches();
+    }
+
 
  
 
