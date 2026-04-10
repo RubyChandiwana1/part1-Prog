@@ -84,6 +84,14 @@ private final String lastName;
                 ? "Password successfully captured."
                 : "Password is not correctly formatted; please ensure that the password contains at least eight characters, a capital letter, a number, and a special character.";
     }
+    
+    public String returnCellPhoneCaptureMessage() {
+        return checkCellPhoneNumber()
+                ? "Cell phone number successfully added."
+                : "Cell phone number incorrectly formatted or does not contain international code.";
+    }
+}
+
 
 
     
