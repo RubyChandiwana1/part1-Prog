@@ -33,6 +33,17 @@ private final String lastName;
         return registeredUsername.contains("_") && registeredUsername.length() <= 5;
     }
  
+    public boolean checkPasswordComplexity() {
+        if (registeredPassword == null) return false;
+        if (registeredPassword.length() < 8) return false;
+        if (!PASSWORD_HAS_UPPER.matcher(registeredPassword).find()) return false;
+        if (!PASSWORD_HAS_DIGIT.matcher(registeredPassword).find()) return false;
+        return PASSWORD_HAS_SPECIAL.matcher(registeredPassword).find();
+    }
+
+ 
+
+ 
 
 
 
