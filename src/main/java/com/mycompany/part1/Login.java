@@ -44,6 +44,20 @@ private final String lastName;
         if (registeredCell == null) return false;
         return INTERNATIONAL_CELL_PATTERN.matcher(registeredCell).matches();
     }
+       public String registerUser() {
+        boolean usernameOk = checkUserName();
+        boolean passwordOk = checkPasswordComplexity();
+
+        if (!usernameOk) {
+            return "Username is not correctly formatted; please ensure that your username contains an underscore and is no more than five characters in length.";
+        }
+
+        if (!passwordOk) {
+            return "Password is not correctly formatted; please ensure that the password contains at least eight characters, a capital letter, a number, and a special character.";
+        }
+
+        return "The two above conditions have been met and the user has been registered successfully.";
+    }
 
 
  
