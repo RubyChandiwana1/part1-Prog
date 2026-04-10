@@ -28,6 +28,10 @@ private final String lastName;
         this.registeredPassword = password;
         this.registeredCell = cellPhoneNumber;
     }
+ public boolean checkUserName() {
+        if (registeredUsername == null) return false;
+        return registeredUsername.contains("_") && registeredUsername.length() <= 5;
+    }
  
 
 
