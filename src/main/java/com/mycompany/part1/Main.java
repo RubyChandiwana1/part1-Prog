@@ -27,3 +27,6 @@ System.out.print("Create password: ");
         System.out.println(login.returnPasswordCaptureMessage());
         System.out.println(login.returnCellPhoneCaptureMessage());
         System.out.println(login.registerUser());
+        
+        System.out.print("Login username: ");
+        String loginUsername = sc.nextLine();
