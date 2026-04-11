@@ -12,5 +12,7 @@ System.out.print("Enter last name: ");
         
         Login login = new Login(firstName, lastName);
 
+System.out.print("Create username: ");
+        String username = sc.nextLine();
 
      
