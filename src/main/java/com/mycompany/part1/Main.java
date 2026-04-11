@@ -14,5 +14,8 @@ System.out.print("Enter last name: ");
 
 System.out.print("Create username: ");
         String username = sc.nextLine();
+        
+System.out.print("Create password: ");
+        String password = sc.nextLine();
 
      
