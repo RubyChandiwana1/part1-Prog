@@ -30,3 +30,8 @@ System.out.print("Create password: ");
         
         System.out.print("Login username: ");
         String loginUsername = sc.nextLine();
+
+ System.out.print("Login password: ");
+        String loginPassword = sc.nextLine();
+
+        
