@@ -18,4 +18,6 @@ System.out.print("Create username: ");
 System.out.print("Create password: ");
         String password = sc.nextLine();
 
-     
+ System.out.print("Enter cell phone number (international format, e.g. +27838968976): ");
+        String cell = sc.nextLine();
+    
