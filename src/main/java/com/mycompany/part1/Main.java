@@ -34,4 +34,8 @@ System.out.print("Create password: ");
  System.out.print("Login password: ");
         String loginPassword = sc.nextLine();
 
-        
+       boolean ok = login.loginUser(loginUsername, loginPassword);
+        System.out.println(login.returnLoginStatus(ok));
+    }
+}
+
