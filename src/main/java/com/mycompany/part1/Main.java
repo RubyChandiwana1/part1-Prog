@@ -9,5 +9,8 @@ public class Main {
         
 System.out.print("Enter last name: ");
         String lastName = sc.nextLine();
+        
+        Login login = new Login(firstName, lastName);
+
 
      
