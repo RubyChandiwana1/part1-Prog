@@ -6,4 +6,8 @@ public class Main {
         
    System.out.print("Enter first name: ");
         String firstName = sc.nextLine();
+        
+System.out.print("Enter last name: ");
+        String lastName = sc.nextLine();
+
      
