@@ -20,4 +20,10 @@ System.out.print("Create password: ");
 
  System.out.print("Enter cell phone number (international format, e.g. +27838968976): ");
         String cell = sc.nextLine();
-    
+
+        login.setRegistrationDetails(username, password, cell);
+
+ System.out.println(login.returnUsernameCaptureMessage());
+        System.out.println(login.returnPasswordCaptureMessage());
+        System.out.println(login.returnCellPhoneCaptureMessage());
+        System.out.println(login.registerUser());
